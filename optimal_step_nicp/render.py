@@ -31,10 +31,10 @@ def render_mesh_as_image(mesh, image_size=1000, camera_direction=None):
 
     # Render the image
 
-    img = vis.capture_screen_float_buffer(do_render=True)
+    img = vis.capture_screen_float_buffer(do_render=False)
     img = np.asarray(img)
     vis.capture_screen_image(os.path.join(DATADIR, "output.png"),
-                             do_render=True)
+                             do_render=False)
     vis.destroy_window()
     return img
 
