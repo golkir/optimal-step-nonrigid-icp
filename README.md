@@ -5,7 +5,7 @@
 
 In this repo, we implement optimal step non-rigid ICP registration algorithm based on [Amberg et al](https://www.researchgate.net/publication/200172513_Optimal_Step_Nonrigid_ICP_Algorithms_for_Surface_Registration).
 
-Inspired by the [pytorch-nicp] https://github.com/wuhaozhe/pytorch-nicp repository, we add support for
+Inspired by the [pytorch-nicp](https://github.com/wuhaozhe/pytorch-nicp) repository, we add support for
 full pose scan registration using Mediapipe pose landmarks. In addition, we use `open3d` mesh library instead of `pytorch3d` which makes it easier to run code on CPU. 
 
 The codebase is a work in progress and the following features are to be added in the future releases:
@@ -50,7 +50,7 @@ python optimal_step_nicp/demo.py
 - **laplacian_weight**: Laplacian smoothing weight. Default: `250`.
 
 
-### Algorithms steps
+### Algorithm
 
 1. Collect pose landmarks for template and target meshes
 2. Calculate the rigid transformation from the template to the target landmarks using SVD-based alignment.
